@@ -1,6 +1,6 @@
 @font-face {
     font-family: Monument Extended;
-    src: url(/assets/MonumentExtended-Regular.otf);
+    src: url('./assets/MonumentExtended-Regular.otf');
 }
 html, body {
     margin: 0;
@@ -116,7 +116,7 @@ html, body {
     right: -500px;
     bottom: -500px;
     left: -500px;
-    background: transparent url(/Darci/assets/noise.png) 0 0;
+    background: transparent url('./assets/noise.png') 0 0;
     background-size: 320px 320px;
       opacity: .35;
       animation: noise 1s steps(8,end) infinite both;
