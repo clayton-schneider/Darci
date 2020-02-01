@@ -35,7 +35,7 @@ function loadAnimation() {
     
     gsap.to('.noise-wrapper', {opacity: 1, delay: 2.2});
     gsap.to('.hero-section__video-container', 3, {opacity: 1, scale: 1, ease: 'Power2.easeIn', delay: 2.3});
-    gsap.from('.hero-section__title', {opacity: 0, y: 50, delay: 5.3});
-    gsap.from('.social', {opacity: 0, x: 50, delay: 5.3});
-    gsap.from('.menu', {opacity: 0, delay: 5.3});
+    gsap.to('.hero-section__title', {visibility: 'visible', opacity: 1, y: '60%', delay: 5.3});
+    gsap.to('.social', {autoAlpha: 1, right: '2%', delay: 5.3});
+    gsap.to('.menu', {autoAlpha: 1, delay: 5.3});
 }
