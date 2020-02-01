@@ -16,7 +16,7 @@ queue.on("complete", event => {
 })
 
 queue.on("fileload", handleFileComplete);
-queue.loadFile('/assets/darci.mp4');
+queue.loadFile('/assets/media/Darci.mp4');
 
 function handleFileComplete(event) {
 

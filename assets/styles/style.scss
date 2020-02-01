@@ -40,17 +40,32 @@ html, body {
 }
 
 .hero-section {
-    
+
     &__video-container {
         opacity: 0;
         pointer-events: none;
         margin: 0 auto;
-        height: 660px;
-        width: 1333.33333px;
+        height: 400px;
+        width: 90%;
         position: absolute;
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%) scale(3);
+
+        @media screen and (min-width: 1700px) {
+          height: 660px;
+          width: 1333.33333px;
+        }
+        @media screen and (min-width: 1500px) {
+          height: 600px;
+          width: 1200px;
+        }
+        @media screen and (min-width: 1150px) {
+          width: 1000px;
+        }
+        @media screen and (min-width: 380px) {
+          height: 550px;
+        }
     }
 
     &__video {
@@ -64,16 +79,20 @@ html, body {
       visibility: hidden;
       opacity: 0;
       position: absolute;
-      top: 50px;
-      left: 50%;
+      top: 50%;
+      left: 30%;
       transform: translate(-50%, -50%);
       z-index: 10;
       pointer-events: none;
-      font-size: 80px;
+      font-size: 40px;
       
       @media screen and (min-width: 900px) {
         top: 40%;
         left: 20%;
+        font-size: 80px;
+      }
+      @media screen and (min-width: 380px) {
+        font-size: 60px;
       }
     }
 }
@@ -84,8 +103,15 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(.5);
   z-index: 10;
+
+  @media screen and (min-width: 900px) {
+    transform: translate(-50%, -50%) scale(.75);
+  }
+  @media screen and (min-width: 1500px) {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .menu {
@@ -170,6 +196,11 @@ html, body {
   &__item {
     display: inline-block;
     list-style: none;
+    font-size: 10px;
+
+    @media screen and (min-width: 380px) {
+      font-size: 16px;
+    }
   }
 
   &__link {
