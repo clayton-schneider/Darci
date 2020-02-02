@@ -28,7 +28,7 @@ function loadAnimation() {
 
     gsap.to('.progress__container', {opacity: 0, ease: 'Power1.easeIn', delay: 2} );
     if (x.matches) {
-        gsap.to('.logo', {top: 57.5, left: 100, scale: 0.375, x: "0%", y: "0%", delay: 2.2});
+        gsap.to('.logo', {top: 57.5, left: 0, scale: 0.375, x: "0%", y: "0%", delay: 2.2});
     } else {
         gsap.to('.logo', {top: 57.5, left: 130, scale: 0.375, x: "0%", y: "0%", delay: 2.2});
     }
